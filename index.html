@@ -27,6 +27,8 @@
     .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:12px;padding:12px 18px;font-weight:750;border:1px solid var(--line);transition:.2s}
     .btn.primary{background:var(--accent);color:#082019;border-color:var(--accent)}
     .btn:hover{transform:translateY(-2px)}
+    .btn.whatsapp{background:#25d366;color:#062b16;border-color:#25d366}
+    .btn.instagram{background:linear-gradient(110deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);color:white;border-color:transparent}
     .profile-card{border:1px solid var(--line);border-radius:28px;padding:28px;background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.025));box-shadow:0 24px 70px rgba(0,0,0,.22)}
     .avatar{width:150px;height:150px;border-radius:50%;margin:0 auto 20px;display:grid;place-items:center;background:linear-gradient(135deg,#75e0b3,#4b9cc9);color:#082019;font-size:3.5rem;font-weight:900;border:6px solid rgba(255,255,255,.12)}
     .profile-card h2{text-align:center;margin:0;font-size:1.35rem}
@@ -50,8 +52,14 @@
     .contact{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:30px;border-radius:24px;border:1px solid rgba(117,224,179,.35);background:linear-gradient(120deg,rgba(117,224,179,.12),rgba(18,29,48,.9))}
     .contact p{margin:5px 0 0;color:var(--muted)}
     footer{border-top:1px solid var(--line);padding:24px 0 36px;color:var(--muted);font-size:.9rem}
+    .floating-contact{position:fixed;right:18px;bottom:20px;z-index:10;display:flex;flex-direction:column;gap:10px}
+    .float-btn{display:flex;align-items:center;gap:9px;padding:12px 16px;border-radius:999px;box-shadow:0 8px 28px rgba(0,0,0,.3);font-weight:800;border:1px solid rgba(255,255,255,.22);transition:transform .2s}
+    .float-btn:hover{transform:translateY(-3px)}
+    .float-btn.whatsapp{background:#25d366;color:#062b16}
+    .float-btn.instagram{background:linear-gradient(110deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);color:white}
+    .float-icon{font-size:1.25rem;line-height:1}
     @media(max-width:760px){.hero{grid-template-columns:1fr;gap:28px;padding:58px 0 48px}.profile-card{max-width:480px;width:100%;margin:auto}.navlinks{gap:12px;font-size:.82rem}.about-grid,.interest-grid{grid-template-columns:1fr}.contact{align-items:flex-start;flex-direction:column}h1{letter-spacing:-1.2px}}
-    @media(max-width:420px){.navlinks a:nth-child(2){display:none}.mini-grid{grid-template-columns:1fr 1fr}.profile-card{padding:20px}}
+    @media(max-width:420px){.navlinks a:nth-child(2){display:none}.mini-grid{grid-template-columns:1fr 1fr}.profile-card{padding:20px}.floating-contact{right:10px;bottom:12px}.float-btn{padding:11px 13px;font-size:.9rem}}
   </style>
 </head>
 <body>
@@ -63,7 +71,6 @@
       </div>
     </nav>
   </header>
-
   <main>
     <section class="wrap hero" id="beranda">
       <div>
@@ -87,7 +94,6 @@
         </div>
       </aside>
     </section>
-
     <section class="wrap" id="tentang">
       <div class="section-head">
         <div class="eyebrow">Tentang Saya</div>
@@ -109,7 +115,6 @@
         </article>
       </div>
     </section>
-
     <section class="wrap" id="minat">
       <div class="section-head">
         <div class="eyebrow">Bidang yang Saya Pelajari</div>
@@ -122,19 +127,20 @@
         <article class="interest"><div class="icon" aria-hidden="true">📚</div><h3>Pengembangan Diri</h3><p>Meningkatkan pengetahuan, disiplin, dan keterampilan praktik.</p></article>
       </div>
     </section>
-
     <section class="wrap" id="kontak">
       <div class="contact">
-        <div><div class="eyebrow">Kontak</div><h2 class="section-title">Mari terhubung.</h2><p>Tambahkan tautan media sosialmu agar pengunjung bisa menghubungi kamu.</p></div>
+        <div><div class="eyebrow">Kontak</div><h2 class="section-title">Mari terhubung.</h2><p>Hubungi saya melalui WhatsApp atau ikuti Instagram saya.</p></div>
         <div class="actions">
-          <!-- Ganti tanda # dengan tautan profilmu yang benar. -->
-          <a class="btn primary" href="#" onclick="alert('Edit file index.html dan ganti tanda # dengan tautan WhatsApp kamu.');return false;">WhatsApp</a>
-          <a class="btn" href="#" onclick="alert('Edit file index.html dan ganti tanda # dengan tautan Instagram kamu.');return false;">Instagram</a>
+          <a class="btn whatsapp" href="https://wa.me/6285739085942" target="_blank" rel="noopener noreferrer" aria-label="Hubungi melalui WhatsApp">☏ WhatsApp</a>
+          <a class="btn instagram" href="https://www.instagram.com/fxalamsyah/" target="_blank" rel="noopener noreferrer" aria-label="Kunjungi Instagram">◎ Instagram</a>
         </div>
       </div>
     </section>
   </main>
-
+  <div class="floating-contact" aria-label="Tombol kontak cepat">
+    <a class="float-btn whatsapp" href="https://wa.me/6285739085942" target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp"><span class="float-icon" aria-hidden="true">☏</span><span>WhatsApp</span></a>
+    <a class="float-btn instagram" href="https://www.instagram.com/fxalamsyah/" target="_blank" rel="noopener noreferrer" aria-label="Buka Instagram"><span class="float-icon" aria-hidden="true">◎</span><span>Instagram</span></a>
+  </div>
   <footer><div class="wrap">© <span id="year"></span> Feri Syaikhu Alamsyah · Dibuat dengan semangat belajar.</div></footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
