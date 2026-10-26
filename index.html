@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="Website profil Feri Syaikhu Alamsyah, mahasiswa Produksi Ternak.">
+  <title>Feri Syaikhu Alamsyah | Profil</title>
+  <style>
+    :root{--bg:#0b1220;--panel:#121d30;--muted:#a8b4c8;--text:#f5f7fb;--accent:#75e0b3;--line:rgba(255,255,255,.12)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(circle at 80% 0%,#1a3550 0,transparent 35%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1080px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:5;background:rgba(11,18,32,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    nav{display:flex;align-items:center;justify-content:space-between;min-height:68px;gap:18px}
+    .brand{font-weight:800;letter-spacing:.3px}.brand span{color:var(--accent)}
+    .navlinks{display:flex;gap:22px;color:var(--muted);font-size:.94rem}
+    .navlinks a:hover{color:var(--accent)}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center;padding:90px 0 76px}
+    .eyebrow{color:var(--accent);font-weight:750;letter-spacing:2px;text-transform:uppercase;font-size:.78rem}
+    h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:1.05;letter-spacing:-2px;margin:16px 0}
+    h1 span{color:var(--accent)}
+    .lead{font-size:1.12rem;color:var(--muted);max-width:620px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:12px;padding:12px 18px;font-weight:750;border:1px solid var(--line);transition:.2s}
+    .btn.primary{background:var(--accent);color:#082019;border-color:var(--accent)}
+    .btn:hover{transform:translateY(-2px)}
+    .profile-card{border:1px solid var(--line);border-radius:28px;padding:28px;background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.025));box-shadow:0 24px 70px rgba(0,0,0,.22)}
+    .avatar{width:150px;height:150px;border-radius:50%;margin:0 auto 20px;display:grid;place-items:center;background:linear-gradient(135deg,#75e0b3,#4b9cc9);color:#082019;font-size:3.5rem;font-weight:900;border:6px solid rgba(255,255,255,.12)}
+    .profile-card h2{text-align:center;margin:0;font-size:1.35rem}
+    .profile-card p{text-align:center;color:var(--muted);margin:5px 0 20px}
+    .mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .mini{padding:13px;border-radius:14px;background:rgba(0,0,0,.16);border:1px solid var(--line)}
+    .mini small{display:block;color:var(--muted);font-size:.76rem}.mini strong{font-size:.95rem}
+    section{padding:36px 0 64px}
+    .section-head{margin-bottom:24px}.section-head .eyebrow{margin-bottom:8px}
+    h2.section-title{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.15;margin:0 0 10px}
+    .section-head p{color:var(--muted);margin:0;max-width:680px}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .card{padding:24px;border-radius:22px;background:var(--panel);border:1px solid var(--line)}
+    .card h3{margin:0 0 8px;font-size:1.1rem}.card p{margin:0;color:var(--muted)}
+    .facts{display:grid;gap:12px}.fact{display:flex;gap:12px;align-items:flex-start}
+    .dot{width:10px;height:10px;flex:0 0 10px;margin-top:8px;border-radius:50%;background:var(--accent)}
+    .fact strong{display:block}.fact span{color:var(--muted);font-size:.95rem}
+    .interest-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .interest{padding:22px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,rgba(117,224,179,.08),rgba(255,255,255,.025))}
+    .interest .icon{font-size:1.6rem}.interest h3{margin:8px 0 6px}.interest p{margin:0;color:var(--muted);font-size:.95rem}
+    .contact{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:30px;border-radius:24px;border:1px solid rgba(117,224,179,.35);background:linear-gradient(120deg,rgba(117,224,179,.12),rgba(18,29,48,.9))}
+    .contact p{margin:5px 0 0;color:var(--muted)}
+    footer{border-top:1px solid var(--line);padding:24px 0 36px;color:var(--muted);font-size:.9rem}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;gap:28px;padding:58px 0 48px}.profile-card{max-width:480px;width:100%;margin:auto}.navlinks{gap:12px;font-size:.82rem}.about-grid,.interest-grid{grid-template-columns:1fr}.contact{align-items:flex-start;flex-direction:column}h1{letter-spacing:-1.2px}}
+    @media(max-width:420px){.navlinks a:nth-child(2){display:none}.mini-grid{grid-template-columns:1fr 1fr}.profile-card{padding:20px}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap" aria-label="Navigasi utama">
+      <a class="brand" href="#beranda">FERI<span>.</span></a>
+      <div class="navlinks">
+        <a href="#tentang">Tentang</a><a href="#minat">Minat</a><a href="#kontak">Kontak</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrap hero" id="beranda">
+      <div>
+        <div class="eyebrow">Website Profil Pribadi</div>
+        <h1>Halo, saya<br><span>Feri Syaikhu</span><br>Alamsyah.</h1>
+        <p class="lead">Mahasiswa Produksi Ternak yang tertarik mempelajari dunia peternakan, pengelolaan ternak, dan pengembangan diri.</p>
+        <div class="actions">
+          <a class="btn primary" href="#tentang">Kenali Saya <span aria-hidden="true">&nbsp;↘</span></a>
+          <a class="btn" href="#kontak">Hubungi Saya</a>
+        </div>
+      </div>
+      <aside class="profile-card" aria-label="Ringkasan profil">
+        <div class="avatar" aria-hidden="true">FA</div>
+        <h2>Feri Syaikhu Alamsyah</h2>
+        <p>Mahasiswa · Produksi Ternak</p>
+        <div class="mini-grid">
+          <div class="mini"><small>Program Studi</small><strong>Produksi Ternak</strong></div>
+          <div class="mini"><small>Kampus</small><strong>Politeknik Negeri Jember</strong></div>
+          <div class="mini"><small>Fokus</small><strong>Peternakan</strong></div>
+          <div class="mini"><small>Prinsip</small><strong>Terus Belajar</strong></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="wrap" id="tentang">
+      <div class="section-head">
+        <div class="eyebrow">Tentang Saya</div>
+        <h2 class="section-title">Belajar hari ini, berkembang setiap hari.</h2>
+        <p>Saya sedang menempuh pendidikan di bidang Produksi Ternak. Saya ingin terus menambah pengetahuan dan pengalaman agar dapat berkontribusi di bidang peternakan.</p>
+      </div>
+      <div class="about-grid">
+        <article class="card">
+          <h3>Perjalanan Pendidikan</h3>
+          <p>Mahasiswa Program Studi Produksi Ternak di Politeknik Negeri Jember. Dalam perkuliahan, saya mempelajari dasar-dasar produksi dan pengelolaan ternak.</p>
+        </article>
+        <article class="card">
+          <h3>Tujuan Saya</h3>
+          <div class="facts">
+            <div class="fact"><span class="dot"></span><div><strong>Menambah wawasan</strong><span>Terus belajar dari materi, praktik, dan pengalaman.</span></div></div>
+            <div class="fact"><span class="dot"></span><div><strong>Mengembangkan keterampilan</strong><span>Membangun kemampuan yang bermanfaat untuk masa depan.</span></div></div>
+            <div class="fact"><span class="dot"></span><div><strong>Berkontribusi di peternakan</strong><span>Mendukung praktik peternakan yang baik dan berkelanjutan.</span></div></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap" id="minat">
+      <div class="section-head">
+        <div class="eyebrow">Bidang yang Saya Pelajari</div>
+        <h2 class="section-title">Minat dan fokus</h2>
+        <p>Beberapa bidang yang relevan dengan studi Produksi Ternak dan ingin terus saya pelajari.</p>
+      </div>
+      <div class="interest-grid">
+        <article class="interest"><div class="icon" aria-hidden="true">🐄</div><h3>Manajemen Ternak</h3><p>Mengenal pemeliharaan, kesehatan, dan kesejahteraan ternak.</p></article>
+        <article class="interest"><div class="icon" aria-hidden="true">🌱</div><h3>Pakan Ternak</h3><p>Mempelajari bahan pakan serta perannya dalam pertumbuhan ternak.</p></article>
+        <article class="interest"><div class="icon" aria-hidden="true">📚</div><h3>Pengembangan Diri</h3><p>Meningkatkan pengetahuan, disiplin, dan keterampilan praktik.</p></article>
+      </div>
+    </section>
+
+    <section class="wrap" id="kontak">
+      <div class="contact">
+        <div><div class="eyebrow">Kontak</div><h2 class="section-title">Mari terhubung.</h2><p>Tambahkan tautan media sosialmu agar pengunjung bisa menghubungi kamu.</p></div>
+        <div class="actions">
+          <!-- Ganti tanda # dengan tautan profilmu yang benar. -->
+          <a class="btn primary" href="#" onclick="alert('Edit file index.html dan ganti tanda # dengan tautan WhatsApp kamu.');return false;">WhatsApp</a>
+          <a class="btn" href="#" onclick="alert('Edit file index.html dan ganti tanda # dengan tautan Instagram kamu.');return false;">Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap">© <span id="year"></span> Feri Syaikhu Alamsyah · Dibuat dengan semangat belajar.</div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
