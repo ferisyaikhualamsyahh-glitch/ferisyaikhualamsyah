@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feri Syaikhu Alamsyah | Mahasiswa Produksi Ternak</title>
+<meta name="description" content="Profil Feri Syaikhu Alamsyah, mahasiswa Produksi Ternak Politeknik Negeri Jember. Kenali minat, keahlian, dan perjalanan belajarnya di dunia peternakan.">
+<meta name="theme-color" content="#0b1220">
+
+<!-- Pratinjau saat link dibagikan di WhatsApp/Instagram -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Feri Syaikhu Alamsyah | Mahasiswa Produksi Ternak">
+<meta property="og:description" content="Mahasiswa Produksi Ternak Politeknik Negeri Jember. Kenali perjalanan belajar saya di dunia peternakan.">
+<meta property="og:url" content="https://ferisyaikhualamsyahh-glitch.github.io/ferisyaikhualamsyah/">
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐄</text></svg>">
+
+<!-- Data terstruktur untuk Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Feri Syaikhu Alamsyah",
+  "jobTitle": "Mahasiswa Produksi Ternak",
+  "email": "mailto:ferisyaikhualamsyahh@gmail.com",
+  "url": "https://ferisyaikhualamsyahh-glitch.github.io/ferisyaikhualamsyah/",
+  "affiliation": { "@type": "CollegeOrUniversity", "name": "Politeknik Negeri Jember" }
+}
+</script>
+
+<style>
+:root{
+  --bg:#0b1220; --bg2:#111a2e; --card:#16213a; --line:#25324f;
+  --text:#e8edf7; --muted:#9aa8c4; --accent:#4ade80; --accent2:#22c55e;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.container{width:min(1080px,92%);margin:0 auto}
+section{padding:80px 0}
+.eyebrow{color:var(--accent);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;margin-bottom:8px}
+h2{font-size:clamp(1.6rem,4vw,2.2rem);line-height:1.2;margin-bottom:12px}
+.lead{color:var(--muted);max-width:620px;margin-bottom:36px}
+.center{text-align:center}
+.center .lead{margin-inline:auto}
+
+/* PROGRESS SCROLL */
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--accent),#3b82f6);z-index:100}
+
+/* NAV */
+header{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(11,18,32,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{display:flex;justify-content:space-between;align-items:center;height:62px}
+.logo{font-weight:800;font-size:1.2rem;letter-spacing:.04em}
+.logo span{color:var(--accent)}
+.menu{display:flex;gap:26px;list-style:none}
+.menu a{color:var(--muted);font-size:.95rem;transition:.2s}
+.menu a:hover,.menu a.active{color:var(--accent)}
+.burger{display:none;background:none;border:0;color:var(--text);font-size:1.6rem;cursor:pointer}
+
+/* BACKGROUND BERGERAK */
+.bg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.bg span{position:absolute;border-radius:50%;filter:blur(90px);opacity:.32;will-change:transform;animation:drift 20s ease-in-out infinite alternate}
+.bg span:nth-child(1){width:480px;height:480px;background:#22c55e;top:-120px;left:-100px}
+.bg span:nth-child(2){width:420px;height:420px;background:#3b82f6;top:35%;right:-120px;animation-duration:26s;animation-delay:-8s}
+.bg span:nth-child(3){width:380px;height:380px;background:#14b8a6;bottom:-140px;left:25%;animation-duration:23s;animation-delay:-14s}
+@keyframes drift{
+  0%{transform:translate(0,0) scale(1)}
+  50%{transform:translate(70px,50px) scale(1.15)}
+  100%{transform:translate(-50px,90px) scale(.95)}
+}
+
+/* HERO */
+#beranda{padding-top:130px;padding-bottom:70px}
+.hero{display:grid;grid-template-columns:1.3fr .9fr;gap:48px;align-items:center}
+.badge{display:inline-block;border:1px solid var(--line);background:var(--bg2);padding:6px 14px;border-radius:99px;font-size:.82rem;color:var(--muted);margin-bottom:18px}
+.badge b{color:var(--accent)}
+h1{font-size:clamp(2rem,5.5vw,3.3rem);line-height:1.12;margin-bottom:12px}
+h1 em{font-style:normal;color:var(--accent)}
+.typing{font-size:clamp(1.05rem,2.6vw,1.35rem);font-weight:600;margin-bottom:16px;min-height:1.7em}
+.typing #typed{color:var(--accent)}
+.caret{display:inline-block;width:2px;height:1.1em;background:var(--accent);margin-left:3px;vertical-align:-3px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.hero p.desc{color:var(--muted);max-width:520px;margin-bottom:28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:10px;font-weight:600;font-size:.95rem;border:1px solid var(--line);background:transparent;color:var(--text);font-family:inherit;transition:.2s;cursor:pointer}
+.btn.primary{background:var(--accent);color:#06210f;border-color:var(--accent)}
+.btn.primary:hover{background:var(--accent2)}
+.btn:not(.primary):hover{border-color:var(--accent);color:var(--accent)}
+
+/* ORBIT HEWAN/TANAMAN */
+.orbit{position:relative;justify-self:center;width:min(320px,76vw);aspect-ratio:1}
+.orbit .core{position:absolute;inset:22%;border-radius:50%;background:linear-gradient(135deg,var(--accent),#14b8a6);display:grid;place-items:center;font-size:clamp(2.4rem,9vw,3.6rem);font-weight:800;color:#06210f;box-shadow:0 0 60px rgba(74,222,128,.35)}
+.orbit .ring{position:absolute;inset:0;border:1.5px dashed var(--line);border-radius:50%;animation:spin 30s linear infinite}
+.orbit .ring i{position:absolute;font-style:normal;font-size:1.7rem;width:50px;height:50px;display:grid;place-items:center;background:var(--card);border:1px solid var(--line);border-radius:50%;animation:spin 30s linear infinite reverse}
+.orbit .ring i:nth-child(1){top:-25px;left:calc(50% - 25px)}
+.orbit .ring i:nth-child(2){right:-25px;top:calc(50% - 25px)}
+.orbit .ring i:nth-child(3){bottom:-25px;left:calc(50% - 25px)}
+.orbit .ring i:nth-child(4){left:-25px;top:calc(50% - 25px)}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* CARDS */
+.grid{display:grid;gap:18px}
+.g3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:var(--accent)}
+.card h3{font-size:1.05rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.93rem}
+.icon{width:44px;height:44px;border-radius:12px;background:rgba(74,222,128,.12);display:grid;place-items:center;font-size:1.4rem;margin-bottom:14px}
+.alt{background:rgba(17,26,46,.65)}
+
+/* TENTANG */
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:40px}
+.about p{color:var(--muted);margin-bottom:14px}
+.facts{display:grid;gap:12px}
+.fact{display:flex;justify-content:space-between;gap:14px;padding:14px 18px;background:var(--card);border:1px solid var(--line);border-radius:12px;font-size:.92rem}
+.fact span{color:var(--muted)}
+.fact b{text-align:right}
+.sub{margin-top:48px;font-size:1.2rem;margin-bottom:18px}
+
+/* SKILL */
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{padding:9px 16px;border-radius:99px;background:var(--card);border:1px solid var(--line);font-size:.9rem;transition:.2s}
+.chip:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+
+/* ALUR PRODUKSI */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px;counter-reset:s}
+.step{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 18px;transition:.25s}
+.step:hover{border-color:var(--accent);transform:translateY(-4px)}
+.step::before{counter-increment:s;content:counter(s);position:absolute;top:-14px;left:16px;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#06210f;font-weight:800;font-size:.85rem;display:grid;place-items:center}
+.step .em{font-size:1.8rem;margin-bottom:8px}
+.step h3{font-size:1rem;margin-bottom:4px}
+.step p{color:var(--muted);font-size:.88rem}
+
+/* TIMELINE */
+.timeline{position:relative;padding-left:28px;border-left:2px solid var(--line);display:grid;gap:28px}
+.tl{position:relative}
+.tl::before{content:"";position:absolute;left:-36px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--accent);border:3px solid var(--bg2)}
+.tl .date{color:var(--accent);font-size:.82rem;font-weight:600}
+.tl h3{font-size:1.08rem;margin:2px 0}
+.tl .org{color:var(--muted);font-size:.9rem;margin-bottom:6px}
+.tl p{color:var(--muted);font-size:.93rem}
+
+/* FAKTA ACAK */
+.factbox{max-width:680px;margin:0 auto;padding:34px 28px;background:var(--card);border:1px solid var(--line);border-radius:20px;text-align:center}
+.factbox .tag{display:inline-block;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;font-weight:600}
+.factbox h3{font-size:1.2rem;margin-bottom:8px}
+.factbox p{color:var(--muted);min-height:5.2em;transition:opacity .25s}
+.factbox p.fade{opacity:0}
+.factbox .btn{margin-top:14px}
+
+/* KONTAK */
+.contact .btns{justify-content:center}
+.addr{margin:28px auto 0;color:var(--muted);font-size:.93rem;max-width:480px}
+.addr a{color:var(--accent);display:inline-block;margin-top:4px}
+footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+
+/* KE ATAS */
+.totop{position:fixed;right:18px;bottom:18px;width:44px;height:44px;border-radius:50%;background:var(--accent);color:#06210f;border:0;font-size:1.2rem;font-weight:800;cursor:pointer;opacity:0;pointer-events:none;transition:.3s;z-index:60}
+.totop.show{opacity:1;pointer-events:auto}
+
+/* ANIMASI MUNCUL */
+.reveal{opacity:0;transform:translateY(24px);transition:.7s}
+.reveal.show{opacity:1;transform:none}
+
+@media(max-width:820px){
+  section{padding:60px 0}
+  .hero,.about{grid-template-columns:1fr}
+  .orbit{order:-1;width:min(240px,62vw);margin-bottom:10px}
+  .menu{position:absolute;top:62px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line);display:none}
+  .menu.open{display:flex}
+  .menu a{display:block;padding:14px 4%}
+  .burger{display:block}
+  .bg span{filter:blur(70px);opacity:.25}
+  .bg span:nth-child(1){width:300px;height:300px}
+  .bg span:nth-child(2){width:280px;height:280px}
+  .bg span:nth-child(3){width:260px;height:260px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+<div class="bg" aria-hidden="true"><span></span><span></span><span></span></div>
+
+<header>
+  <nav class="container">
+    <a href="#beranda" class="logo">FERI<span>.</span></a>
+    <button class="burger" id="burger" aria-label="Buka menu">☰</button>
+    <ul class="menu" id="menu">
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#keahlian">Keahlian</a></li>
+      <li><a href="#alur">Alur Produksi</a></li>
+      <li><a href="#pengalaman">Pengalaman</a></li>
+      <li><a href="#fakta">Fakta</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<!-- BERANDA -->
+<section id="beranda">
+  <div class="container hero">
+    <div>
+      <span class="badge">🎓 Mahasiswa <b>Produksi Ternak</b> · Polije</span>
+      <h1>Halo, saya <em>Feri Syaikhu Alamsyah.</em></h1>
+      <div class="typing">Saya <span id="typed">mahasiswa Produksi Ternak</span><span class="caret"></span></div>
+      <p class="desc">Tertarik pada pengelolaan ternak dan pakan. Saya sedang membangun pengalaman lewat praktik langsung agar siap berkontribusi di dunia peternakan.</p>
+      <div class="btns">
+        <a class="btn primary" href="#tentang">Kenali Saya ↘</a>
+        <a class="btn" href="#kontak">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="orbit" aria-hidden="true">
+      <div class="ring"><i>🐄</i><i>🌾</i><i>🐐</i><i>🥛</i></div>
+      <div class="core">FA</div>
+    </div>
+  </div>
+</section>
+
+<!-- TENTANG -->
+<section id="tentang" class="alt">
+  <div class="container">
+    <p class="eyebrow">Tentang Saya</p>
+    <h2>Belajar dari teori, berkembang lewat praktik.</h2>
+    <div class="about reveal">
+      <div>
+        <p>Saya mahasiswa Program Studi Produksi Ternak di Politeknik Negeri Jember. Di perkuliahan saya mempelajari dasar-dasar produksi, pemeliharaan, dan pengelolaan ternak.</p>
+        <p>Saya ingin menambah wawasan dan keterampilan, lalu menerapkannya langsung di lapangan untuk mendukung praktik peternakan yang baik dan berkelanjutan.</p>
+      </div>
+      <div class="facts">
+        <div class="fact"><span>Program Studi</span><b>Produksi Ternak</b></div>
+        <div class="fact"><span>Kampus</span><b>Politeknik Negeri Jember</b></div>
+        <div class="fact"><span>Fokus</span><b>Peternakan</b></div>
+        <div class="fact"><span>Prinsip</span><b>Terus Belajar</b></div>
+        <div class="fact"><span>Tanggal Lahir</span><b>9 September 2007</b></div>
+        <div class="fact"><span>Asal</span><b>Selopuro, Blitar, Jawa Timur</b></div>
+      </div>
+    </div>
+
+    <h3 class="sub">Tujuan Saya</h3>
+    <div class="grid g3 reveal">
+      <div class="card"><div class="icon">📖</div><h3>Menambah wawasan</h3><p>Terus belajar dari materi, praktik, dan pengalaman.</p></div>
+      <div class="card"><div class="icon">🛠️</div><h3>Mengembangkan keterampilan</h3><p>Membangun kemampuan yang bermanfaat untuk masa depan.</p></div>
+      <div class="card"><div class="icon">🤝</div><h3>Berkontribusi di peternakan</h3><p>Mendukung praktik peternakan yang baik dan berkelanjutan.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- KEAHLIAN -->
+<section id="keahlian">
+  <div class="container">
+    <p class="eyebrow">Keahlian</p>
+    <h2>Yang sedang saya pelajari dan kuasai</h2>
+    <p class="lead">Kemampuan yang saya bangun dari perkuliahan dan praktik.</p>
+    <!-- Hapus yang belum kamu kuasai, tambahkan yang lain -->
+    <div class="chips reveal">
+      <span class="chip">Manajemen Pemeliharaan Ternak</span>
+      <span class="chip">Kesehatan &amp; Kesejahteraan Ternak</span>
+      <span class="chip">Pakan &amp; Nutrisi Ternak</span>
+      <span class="chip">Formulasi Ransum</span>
+      <span class="chip">Pencatatan (Recording) Ternak</span>
+      <span class="chip">Microsoft Excel</span>
+      <span class="chip">Kerja Tim</span>
+      <span class="chip">Disiplin &amp; Tanggung Jawab</span>
+    </div>
+  </div>
+</section>
+
+<!-- ALUR PRODUKSI -->
+<section id="alur" class="alt">
+  <div class="container">
+    <p class="eyebrow">Alur Produksi Ternak</p>
+    <h2>Dari bibit hingga hasil</h2>
+    <p class="lead">Gambaran umum tahapan yang saya pelajari di Produksi Ternak.</p>
+    <div class="steps reveal">
+      <div class="step"><div class="em">🧬</div><h3>Bibit</h3><p>Memilih ternak yang sehat dan unggul sebagai awal usaha.</p></div>
+      <div class="step"><div class="em">🌾</div><h3>Pakan</h3><p>Menyusun pakan yang cukup dan seimbang untuk kebutuhan ternak.</p></div>
+      <div class="step"><div class="em">🏠</div><h3>Kandang &amp; Pemeliharaan</h3><p>Menjaga kandang tetap bersih, nyaman, dan aman.</p></div>
+      <div class="step"><div class="em">🩺</div><h3>Kesehatan</h3><p>Mencegah penyakit dan memantau kondisi ternak secara rutin.</p></div>
+      <div class="step"><div class="em">📊</div><h3>Hasil &amp; Pencatatan</h3><p>Mencatat pertumbuhan dan produksi untuk bahan evaluasi.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PENGALAMAN -->
+<section id="pengalaman">
+  <div class="container">
+    <p class="eyebrow">Pengalaman</p>
+    <h2>Perjalanan saya sejauh ini</h2>
+    <p class="lead">Praktikum, magang, organisasi, dan kegiatan lainnya.</p>
+    <div class="timeline reveal">
+      <!-- Tambahkan blok baru (salin satu <div class="tl">) kalau punya magang, organisasi, atau lomba -->
+      <div class="tl">
+        <span class="date">Sekarang</span>
+        <h3>Mahasiswa Produksi Ternak</h3>
+        <div class="org">Politeknik Negeri Jember</div>
+        <p>Mempelajari produksi dan pengelolaan ternak melalui perkuliahan dan praktikum.</p>
+      </div>
+      <div class="tl">
+        <span class="date">Selama perkuliahan</span>
+        <h3>Praktikum Produksi Ternak</h3>
+        <div class="org">Politeknik Negeri Jember</div>
+        <p>Belajar langsung tentang pemeliharaan, pakan, dan pengelolaan ternak di lapangan.</p>
+      </div>
+      <div class="tl">
+        <span class="date">Oktober 2026</span>
+        <h3>Membuat Website Profil Pribadi</h3>
+        <div class="org">Proyek mandiri · GitHub Pages</div>
+        <p>Membangun website profil untuk memperkenalkan diri dan membagikan perjalanan belajar saya di bidang peternakan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MINAT -->
+<section id="minat" class="alt">
+  <div class="container">
+    <p class="eyebrow">Minat dan Fokus</p>
+    <h2>Bidang yang ingin saya dalami</h2>
+    <div class="grid g3 reveal" style="margin-top:28px">
+      <div class="card"><div class="icon">🐄</div><h3>Manajemen Ternak</h3><p>Pemeliharaan, kesehatan, dan kesejahteraan ternak.</p></div>
+      <div class="card"><div class="icon">🌱</div><h3>Pakan Ternak</h3><p>Bahan pakan dan perannya dalam pertumbuhan serta produktivitas ternak.</p></div>
+      <div class="card"><div class="icon">📈</div><h3>Produktivitas &amp; Usaha</h3><p>Pencatatan dan pengelolaan agar usaha peternakan efisien dan berkelanjutan.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAKTA PETERNAKAN -->
+<section id="fakta">
+  <div class="container center">
+    <p class="eyebrow">Tahukah Kamu?</p>
+    <h2>Fakta seputar peternakan</h2>
+    <p class="lead">Klik tombol untuk melihat fakta lain yang saya pelajari.</p>
+    <div class="factbox reveal">
+      <span class="tag" id="factTag">Fakta 1</span>
+      <h3 id="factTitle"></h3>
+      <p id="factText"></p>
+      <button class="btn primary" id="factBtn" type="button">🎲 Fakta berikutnya</button>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAK -->
+<section id="kontak" class="contact alt center">
+  <div class="container">
+    <p class="eyebrow">Kontak</p>
+    <h2>Mari terhubung.</h2>
+    <p class="lead">Terbuka untuk diskusi, kolaborasi, dan peluang magang atau kerja di bidang peternakan.</p>
+    <div class="btns">
+      <a class="btn primary" href="https://wa.me/6285739085942" target="_blank" rel="noopener">☏ WhatsApp</a>
+      <a class="btn" href="mailto:ferisyaikhualamsyahh@gmail.com">✉ Email</a>
+      <button class="btn" id="copyBtn" type="button">⧉ Salin Email</button>
+      <a class="btn" href="https://www.instagram.com/fxalamsyah/" target="_blank" rel="noopener">◎ Instagram</a>
+    </div>
+    <p class="addr">
+      📍 Jl. Gn. Kawi, Dusun Gading, Kec. Selopuro, Kab. Blitar, Jawa Timur 66184<br>
+      <a href="https://www.google.com/maps/search/?api=1&query=Gading+Selopuro+Blitar" target="_blank" rel="noopener">Lihat di Google Maps ↗</a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>© <span id="thn"></span> Feri Syaikhu Alamsyah · Dibuat dengan semangat belajar.</footer>
+
+<button class="totop" id="totop" aria-label="Kembali ke atas">↑</button>
+
+<script>
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Tahun otomatis
+  document.getElementById('thn').textContent = new Date().getFullYear();
+
+  // Menu mobile
+  const menu = document.getElementById('menu');
+  document.getElementById('burger').addEventListener('click', () => menu.classList.toggle('open'));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+
+  // Animasi muncul saat scroll
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('show'); io.unobserve(e.target); }
+  }), { threshold: .12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Efek mengetik
+  const roles = [
+    'mahasiswa Produksi Ternak',
+    'pembelajar manajemen ternak',
+    'tertarik pada pakan & nutrisi ternak',
+    'calon praktisi peternakan'
+  ];
+  const typed = document.getElementById('typed');
+  if (!reduce) {
+    let r = 0, c = 0, del = false;
+    (function tick() {
+      const w = roles[r];
+      typed.textContent = w.slice(0, c);
+      if (!del && c < w.length) { c++; setTimeout(tick, 70); }
+      else if (!del) { del = true; setTimeout(tick, 1600); }
+      else if (c > 0) { c--; setTimeout(tick, 35); }
+      else { del = false; r = (r + 1) % roles.length; setTimeout(tick, 350); }
+    })();
+  }
+
+  // Progress scroll + tombol ke atas
+  const prog = document.getElementById('progress');
+  const totop = document.getElementById('totop');
+  function onScroll() {
+    const h = document.documentElement;
+    const max = h.scrollHeight - h.clientHeight;
+    prog.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+    totop.classList.toggle('show', h.scrollTop > 500);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  totop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' }));
+
+  // Menu aktif sesuai section
+  const links = [...menu.querySelectorAll('a')];
+  const spy = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) {
+      links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+    }
+  }), { rootMargin: '-45% 0px -50% 0px' });
+  links.forEach(a => { const s = document.querySelector(a.getAttribute('href')); if (s) spy.observe(s); });
+
+  // Fakta peternakan
+  const facts = [
+    { t: 'Lambung ruminansia', d: 'Sapi, kambing, dan domba termasuk ruminansia. Lambungnya punya empat bagian: rumen, retikulum, omasum, dan abomasum, sehingga mampu mencerna pakan berserat.' },
+    { t: 'Memamah biak', d: 'Ruminansia mengunyah ulang pakan yang sudah ditelan. Proses ini membantu memecah serat agar lebih mudah dicerna.' },
+    { t: 'Hijauan dan konsentrat', d: 'Pakan ternak umumnya terdiri dari hijauan seperti rumput dan leguminosa, serta konsentrat yang kaya energi dan protein.' },
+    { t: 'Air itu penting', d: 'Air minum bersih adalah kebutuhan utama ternak. Kekurangan air bisa menurunkan nafsu makan dan produktivitas.' },
+    { t: 'Lima kebebasan hewan', d: 'Kesejahteraan hewan berpegang pada lima kebebasan: bebas dari lapar dan haus, dari ketidaknyamanan, dari sakit dan cedera, bebas berperilaku normal, serta bebas dari rasa takut dan tertekan.' },
+    { t: 'Kekuatan pencatatan', d: 'Pencatatan pertumbuhan, reproduksi, dan produksi membantu peternak mengevaluasi usahanya dan mengambil keputusan yang lebih tepat.' }
+  ];
+  let fi = 0;
+  const fTag = document.getElementById('factTag'), fTitle = document.getElementById('factTitle'), fText = document.getElementById('factText');
+  function showFact(i) {
+    fTag.textContent = 'Fakta ' + (i + 1) + ' dari ' + facts.length;
+    fTitle.textContent = facts[i].t;
+    fText.textContent = facts[i].d;
+  }
+  showFact(0);
+  document.getElementById('factBtn').addEventListener('click', () => {
+    fText.classList.add('fade');
+    setTimeout(() => { fi = (fi + 1) % facts.length; showFact(fi); fText.classList.remove('fade'); }, reduce ? 0 : 250);
+  });
+
+  // Salin email
+  const copyBtn = document.getElementById('copyBtn');
+  copyBtn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText('ferisyaikhualamsyahh@gmail.com');
+      copyBtn.textContent = '✓ Tersalin';
+    } catch (e) {
+      copyBtn.textContent = 'ferisyaikhualamsyahh@gmail.com';
+    }
+    setTimeout(() => { copyBtn.textContent = '⧉ Salin Email'; }, 2200);
+  });
+</script>
+</body>
+</html>
